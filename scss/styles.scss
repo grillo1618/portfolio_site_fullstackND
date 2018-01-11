@@ -1,0 +1,239 @@
+$pink: #ea48eb;
+$white: #ffffff;
+$grey: #414148;
+$udacity_lightblue: #02b3e4;
+$udacity_darkgray: #2d3c49;
+$udacity_lightgray: #7d97ad;
+
+
+@mixin bg_img($url, $size, $position) {
+  background-image: url($url);
+  background-size: $size;
+  background-position: $position;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.wrapper {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.banner {
+  padding: 5em 0;
+  .logo {
+    float: left;
+  }
+  h1 {
+    color: $udacity_darkgray;
+    text-align: right;
+    font-size: 4em;
+    display: inline;
+    float: right;
+    margin: 0;
+  }
+}
+
+.logo {
+  background: $udacity_lightblue;
+  border-radius: 100%;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  color: $white;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+  margin-bottom: 2em;
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.work {
+
+  background: $udacity_darkgray;
+  padding: 5em 0;
+  .card {
+    background: $white;
+    border-radius: .35em;
+    height: 450px;
+    display: table;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border-radius: 0.3618em;
+  }
+  .card_full {
+    width: 100%;
+  }
+
+  .card_1 {
+    @include bg_img('../images/UIDesk.svg', 100%, 100px 100px);
+    background-position: center;
+
+  }
+
+  .card_inner {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    padding: 1.5em 12%;
+    color: $white;
+    p {
+      font-size: 2.618em;
+      text-trasform: uppercase;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 4em;
+      margin: 0;
+    }
+  }
+  .pink {
+    background: rgba(230, 56, 222, .618);
+  }
+
+  .card_half {
+    width: 48%;
+    float: left;
+  }
+
+  .card_third {
+    width: 61.8%;
+    float: left;
+  }
+
+  .view_more {
+    width: 25%;
+    float: left;
+    height: 450px;
+    padding-left: 3em;
+    a {
+      text-decoration: none;
+      &:hover {
+        p {
+          color: $udacity_lightblue;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.25em;
+      font-weight: 700;
+      line-height: 450px;
+      margin: 0;
+      color: rgba(146, 146, 171, 1);
+    }
+  }
+
+  .card_2 {
+    @include bg_img('../images/UIDesk.svg', 100%, center);
+  }
+
+  .card_3 {
+    @include bg_img('../images/UIDesk.svg', 100%, center);
+  }
+
+  .card_4 {
+    @include bg_img('../images/UIDesk.svg', 100%, center);
+  }
+
+
+  .left {
+    margin-left: 1.5%;
+  }
+
+  .right {
+    margin-right: 1.5%;
+  }
+
+  .tall {
+    height: 700px;
+  }
+
+  .green {
+    background: rgba(80, 216, 93, 0.618);
+  }
+
+  .purple {
+    background: rgba(145, 89, 219, 0.618);
+  }
+
+  .blue {
+    background: rgba(131, 226, 245, 0.618);
+  }
+
+  .pink, .green, .purple, .blue {
+    border-radius: 0.3618em;
+  }
+
+
+
+}
+
+footer {
+
+  padding: 3em 0;
+
+  .logo {
+    float: left;
+    margin: 0;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+    li {
+      display: inline;
+      float: left;
+      margin-left: 4em;
+      .title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.618em;
+        display: block;
+        padding-bottom: 0.618em;
+      }
+      .links {
+        font-size: 1.618em;
+        a {
+          color: $udacity_darkgray;
+          text-decoration: none;
+          &:hover{
+            color: $udacity_lightblue;
+          }
+        }
+      }
+    }
+  }
+
+}
