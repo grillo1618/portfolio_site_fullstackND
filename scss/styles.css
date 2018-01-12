@@ -41,7 +41,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 75px;
   color: #ffffff;
   font-size: 1.1em;
-  text-align: center; }
+  text-align: center;
+  transition: border-radius 0.618s; }
+  .logo:hover {
+    border-radius: 21%; }
+
+.header_name {
+  border-bottom: 3px solid #7d97ad;
+  font-weight: 700; }
 
 .row {
   width: 100%;
@@ -51,6 +58,13 @@ h1, h2, h3, h4, h5, h6 {
     display: table; }
   .row:after {
     clear: both; }
+
+.featured_works_header {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 4.618em;
+  border-bottom: 5px solid #02b3e4;
+  margin: 0; }
 
 .work {
   background: #2d3c49;
@@ -66,9 +80,20 @@ h1, h2, h3, h4, h5, h6 {
   .work .card_full {
     width: 100%; }
   .work .card_1 {
-    background-image: url("../images/UIDesk.svg");
+    background-image: url("../images/porschr.jpeg");
     background-size: 100%;
-    background-position: 100px 100px;
+    background-position: center; }
+  .work .card_2 {
+    background-image: url("../images/myreads.jpg");
+    background-size: 300%;
+    background-position: center; }
+  .work .card_3 {
+    background-image: url("../images/movie_site.jpg");
+    background-size: 200%;
+    background-position: center; }
+  .work .card_4 {
+    background-image: url("../images/pharmacy.jpeg");
+    background-size: 200%;
     background-position: center; }
   .work .card_inner {
     display: table-cell;
@@ -78,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff; }
     .work .card_inner p {
       font-size: 2.618em;
-      text-trasform: uppercase;
+      text-transform: uppercase;
       font-weight: 700; }
     .work .card_inner h2 {
       font-size: 4em;
@@ -106,18 +131,6 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 450px;
       margin: 0;
       color: #9292ab; }
-  .work .card_2 {
-    background-image: url("../images/UIDesk.svg");
-    background-size: 100%;
-    background-position: center; }
-  .work .card_3 {
-    background-image: url("../images/UIDesk.svg");
-    background-size: 100%;
-    background-position: center; }
-  .work .card_4 {
-    background-image: url("../images/UIDesk.svg");
-    background-size: 100%;
-    background-position: center; }
   .work .left {
     margin-left: 1.5%; }
   .work .right {
@@ -157,7 +170,196 @@ footer {
         footer ul li .links a {
           color: #2d3c49;
           text-decoration: none; }
-          footer ul li .links a:hover {
+          footer ul li .links a p:hover {
             color: #02b3e4; }
+
+@media screen and (min-width: 359px) and (max-width: 521px) {
+  .banner h1 {
+    font-size: 1em;
+    margin-right: 8px; }
+  .banner .logo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 3px; }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 3px; }
+
+  .header_name {
+    font-size: 1.618em;
+    border-bottom: 1.618px solid #7d97ad; }
+
+  .featured_works_header {
+    font-size: 2.618em; }
+    .featured_works_header .featured_works_header_text {
+      margin-left: 0.1618em; }
+
+  .work .card_inner p {
+    font-size: 1em; }
+  .work .card_inner h2 {
+    font-size: 1.618em; }
+  .work .card_1, .work .card_2, .work .card_3, .work .card_4 {
+    height: 250px;
+    margin: 10px;
+    width: 95%; }
+  .work .view_more {
+    width: 100%;
+    height: 250px; }
+    .work .view_more p {
+      line-height: 250px; }
+
+  footer .logo {
+    float: none;
+    width: 98%;
+    margin: auto;
+    border-radius: 13px; }
+  footer ul li {
+    margin-left: 0;
+    float: none; } }
+@media screen and (min-width: 471px) and (max-width: 521px) {
+  .banner .logo {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin-left: 5%; } }
+@media screen and (min-width: 521px) and (max-width: 768px) {
+  .logo {
+    transition: border-radius 0.618s; }
+    .logo:hover {
+      border-radius: 10%; }
+
+  .banner h1 {
+    font-size: 1.618em;
+    margin-right: 8px; }
+  .banner .logo {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin-left: 5%; }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 3px; }
+
+  .header_name {
+    font-size: 1.618em;
+    border-bottom: 1.618px solid #7d97ad; }
+
+  .featured_works_header {
+    font-size: 2.618em; }
+    .featured_works_header .featured_works_header_text {
+      margin-left: 0.1618em; }
+
+  .work .card_inner p {
+    font-size: 1em; }
+  .work .card_inner h2 {
+    font-size: 1.618em; }
+  .work .card_1, .work .card_2, .work .card_3, .work .card_4 {
+    height: 250px;
+    margin: 10px;
+    width: 95%; }
+  .work .view_more {
+    width: 100%;
+    height: 250px; }
+    .work .view_more p {
+      line-height: 250px; }
+
+  footer .logo {
+    float: none;
+    width: 98%;
+    margin: auto;
+    border-radius: 13px; }
+  footer ul li {
+    margin-left: 0;
+    float: none; } }
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .banner h1 {
+    font-size: 2em;
+    margin-right: 3%; }
+  .banner .logo {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-left: 5%;
+    font-size: 1.618em; }
+
+  .work .card_1, .work .card_2, .work .card_3, .work .card_4 {
+    margin: 8px; }
+  .work .card_half {
+    width: 48%;
+    float: left; }
+  .work .card_third {
+    width: 61.8%;
+    float: left; }
+  .work .view_more {
+    width: 25%;
+    float: left;
+    height: 450px;
+    padding-left: 3em; }
+    .work .view_more a {
+      text-decoration: none; }
+      .work .view_more a:hover p {
+        color: #02b3e4; }
+    .work .view_more p {
+      font-size: 1em;
+      font-weight: 700;
+      line-height: 450px;
+      margin: 0;
+      color: #9292ab; }
+
+  footer {
+    padding: 3em 0; }
+    footer .logo {
+      float: none;
+      margin: auto; }
+    footer ul {
+      list-style: none;
+      margin: 0;
+      padding: 1em; }
+      footer ul li {
+        display: inline;
+        float: left;
+        margin-left: 4em; }
+        footer ul li .title {
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 0.618em;
+          display: block;
+          padding-bottom: 0.618em; }
+        footer ul li .links {
+          font-size: 1.618em; }
+          footer ul li .links a {
+            color: #2d3c49;
+            text-decoration: none; }
+            footer ul li .links a:hover {
+              color: #02b3e4; } }
+@media screen and (min-width: 769px) and (max-width: 892px) {
+  .banner h1 {
+    font-size: 3em;
+    margin-right: 3%; }
+  .banner .logo {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin-left: 5%; }
+
+  .work .view_more p {
+    font-size: 1em; } }
+@media screen and (min-width: 852px) and (max-width: 903px) {
+  .banner h1 {
+    font-size: 3em;
+    margin-right: 5%; }
+  .banner .logo {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-left: 5%; } }
 
 /*# sourceMappingURL=styles.css.map */
