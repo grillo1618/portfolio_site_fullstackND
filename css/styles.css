@@ -5,24 +5,32 @@ Description: This stylesheet applies the styling for the udacity work portfolio.
 /* Element Selectors:
 -----------------------
 */
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Quicksand', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
 }
 
 /* Class Selectors:
 --------------------
 */
-.cf:before, .cf:after {
+
+.cf:before,
+.cf:after {
   content: "";
   display: table;
 }
@@ -32,19 +40,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Wrapper Selectors: */
+
 .wrapper {
   width: 1000px;
   max-width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Banner Selectors: */
+
 .banner {
   padding: 5em 0;
-}
-
-.banner .logo {
-  float: left;
 }
 
 .banner h1 {
@@ -52,21 +60,25 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
   font-size: 4em;
   display: inline;
-  float: right;
-  margin: 0;
 }
 
 /* Logo Selectors: */
+
 .logo {
   background: #02b3e4;
   border-radius: 100%;
-  width: 75px;
-  height: 75px;
-  line-height: 75px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
   color: #ffffff;
   font-size: 1.1em;
   text-align: center;
   transition: border-radius 0.618s;
+}
+
+.banner h1,
+.banner .logo {
+  margin: 0 auto;
 }
 
 .logo:hover {
@@ -78,24 +90,34 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-/* Grid class styling: */
-.row {
-  width: 100%;
-  margin-bottom: 2em;
-}
+/*!* Grid class styling: *!*/
 
-.row:before, .row:after {
-  content: "";
-  display: table;
-}
+/*.row {*/
 
-.row:after {
-  clear: both;
-}
+/*width: 100%;*/
+
+/*margin-bottom: 2em;*/
+
+/*}*/
+
+/*.row:before, .row:after {*/
+
+/*content: "";*/
+
+/*display: table;*/
+
+/*}*/
+
+/*.row:after {*/
+
+/*clear: both;*/
+
+/*}*/
 
 /* Works header rules: */
+
 .featured_works_header {
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   font-size: 4.618em;
   border-bottom: 5px solid #02b3e4;
@@ -103,13 +125,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Work section rules: */
+
 .work {
   background: #2d3c49;
   padding: 5em 0;
 }
 
 .work .card {
-  background: #ffffff;
+  background: #fff;
   border-radius: .35em;
   height: 450px;
   display: table;
@@ -123,27 +146,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .work .card_1 {
+  order: 1;
+  margin: 21px 0;
   background-image: url("../images/porschr.jpeg");
   background-size: 100%;
   background-position: center;
 }
 
 .work .card_2 {
+  order: 2;
   background-image: url("../images/myreads.jpg");
   background-size: 300%;
   background-position: center;
 }
 
 .work .card_3 {
+  order: 3;
   background-image: url("../images/movie_site.jpg");
   background-size: 200%;
   background-position: center;
 }
 
 .work .card_4 {
+  order: 4;
   background-image: url("../images/pharmacy.jpeg");
   background-size: 200%;
   background-position: center;
+  margin-top: 10px;
 }
 
 .work .card_inner {
@@ -151,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
   height: 100%;
   padding: 1.5em 12%;
-  color: #ffffff;
+  color: #fff;
 }
 
 .work .card_inner p {
@@ -184,6 +213,7 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   height: 450px;
   padding-left: 3em;
+  order: 5;
 }
 
 .work .view_more a {
@@ -226,11 +256,15 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(131, 226, 245, 0.618);
 }
 
-.work .pink, .work .green, .work .purple, .work .blue {
+.work .pink,
+.work .green,
+.work .purple,
+.work .blue {
   border-radius: 0.3618em;
 }
 
 /* Footer Selectors: */
+
 footer {
   padding: 3em 0;
 }
@@ -276,6 +310,7 @@ footer ul li .links a p:hover {
 /* Media Queries (Responsive Design): */
 
 /* Small Screen Media Query: */
+
 @media screen and (min-width: 359px) and (max-width: 521px) {
   .banner h1 {
     font-size: 1em;
@@ -310,7 +345,10 @@ footer ul li .links a p:hover {
   .work .card_inner h2 {
     font-size: 1.618em;
   }
-  .work .card_1, .work .card_2, .work .card_3, .work .card_4 {
+  .work .card_1,
+  .work .card_2,
+  .work .card_3,
+  .work .card_4 {
     height: 250px;
     margin: 10px;
     width: 95%;
@@ -344,6 +382,7 @@ footer ul li .links a p:hover {
 }
 
 /* Mobile device screen size media query: */
+
 @media screen and (min-width: 521px) and (max-width: 768px) {
   .logo {
     transition: border-radius 0.618s;
@@ -353,7 +392,6 @@ footer ul li .links a p:hover {
   }
   .banner h1 {
     font-size: 1.618em;
-    margin-right: 8px;
   }
   .banner .logo {
     width: 75px;
@@ -383,7 +421,10 @@ footer ul li .links a p:hover {
   .work .card_inner h2 {
     font-size: 1.618em;
   }
-  .work .card_1, .work .card_2, .work .card_3, .work .card_4 {
+  .work .card_1,
+  .work .card_2,
+  .work .card_3,
+  .work .card_4 {
     height: 250px;
     margin: 10px;
     width: 95%;
@@ -408,6 +449,7 @@ footer ul li .links a p:hover {
 }
 
 /* Tablet size screen size media queries: */
+
 @media screen and (min-width: 768px) and (max-width: 768px) {
   .banner h1 {
     font-size: 2em;
@@ -420,8 +462,11 @@ footer ul li .links a p:hover {
     margin-left: 5%;
     font-size: 1.618em;
   }
-  .work .card_1, .work .card_2, .work .card_3, .work .card_4 {
-    margin: 8px;
+  .work .card_1,
+  .work .card_2,
+  .work .card_3,
+  .work .card_4 {
+    margin: 5px;
   }
   .work .card_half {
     width: 48%;
@@ -487,6 +532,7 @@ footer ul li .links a p:hover {
 }
 
 /* Big tablets and laptop screen sizes media queries: */
+
 @media screen and (min-width: 769px) and (max-width: 892px) {
   .banner h1 {
     font-size: 3em;
@@ -504,6 +550,7 @@ footer ul li .links a p:hover {
 }
 
 /* Laptop and Desktop Screen sizes: */
+
 @media screen and (min-width: 852px) and (max-width: 903px) {
   .banner h1 {
     font-size: 3em;
