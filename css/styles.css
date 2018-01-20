@@ -90,30 +90,6 @@ h6 {
   font-weight: 700;
 }
 
-/*!* Grid class styling: *!*/
-
-/*.row {*/
-
-/*width: 100%;*/
-
-/*margin-bottom: 2em;*/
-
-/*}*/
-
-/*.row:before, .row:after {*/
-
-/*content: "";*/
-
-/*display: table;*/
-
-/*}*/
-
-/*.row:after {*/
-
-/*clear: both;*/
-
-/*}*/
-
 /* Works header rules: */
 
 .featured_works_header {
